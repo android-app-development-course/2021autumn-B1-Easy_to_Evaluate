@@ -1,0 +1,7 @@
+/* pages/waitJudgeList/waitJudgeList.wxss */
+.button {
+  padding:10rpx;
+  color: #fff;
+  background-color: #44cccc;
+  border-radius: 10rpx;
+}

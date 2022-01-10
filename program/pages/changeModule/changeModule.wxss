@@ -1,0 +1,26 @@
+/* pages/changeModule/changeModule.wxss */
+.cancel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 60rpx 50rpx;
+  height: 100rpx;
+  width: 250rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: rgba(167, 167, 167, 0.521);
+}
+.sure {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 50rpx 60rpx 0;
+  height: 100rpx;
+  width: 250rpx;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #44cccc;
+}

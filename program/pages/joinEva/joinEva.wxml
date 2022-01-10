@@ -1,0 +1,19 @@
+<import src="../template/template.wxml"></import>
+
+<template is="title" data="{{title: '个人参评   '}}"></template>
+<view class="center">
+  <scroll-view class="selectBar" scroll-x="{{true}}">
+    <view class="selectItem {{index==0? 'a':''}}" wx:for="{{moduleList}}" >{{item}}</view>
+  </scroll-view>
+  <view class="item" wx:for="{{materialList}}">
+    <view class="itemTitle">材料{{index + 1}}</view>
+    <input type="text" class="borderInput" placeholder="请输入材料命名" value="{{item.name}}"/>
+    <input type="text" class="borderInput" placeholder="请输入自评分值" value="{{item.num}}"/>
+    <view class="image border" style="height: 400rpx;background-color: #eee; overflow: hidden;">
+      <view wx:if="{{!item.url}}" style="text-align: center;line-height: 400rpx;">上传图片</view>
+      <image wx:if="{{item.url}}" src="{{item.url}}" mode="heightFix" style="height: 400rpx"></image>
+    </view>
+      系统推荐分值：待完成
+  </view>
+  <view class="addItem" bindtap="add">添加材料</view>
+</view>

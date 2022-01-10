@@ -1,0 +1,54 @@
+/* pages/comDetail/comDetail.wxss */
+.Container {
+  margin-bottom: 100rpx;
+  /* background-color: #eee; */
+}
+
+.messageContainer {
+  overflow: hidden;
+  margin: 20rpx auto;
+}
+
+.myMessage {
+  padding:10rpx;
+  float: right;
+  min-height: 45rpx;
+  max-width: 80%;
+  text-align: right;
+  border-radius: 10rpx;
+  margin: 0;
+}
+
+.oppositeMessage {
+  padding:10rpx;
+  background-color: #44cccc;
+  float: left;
+  min-height: 45rpx;
+  max-width: 80%;
+  border-radius: 10rpx;
+  margin: 0;
+}
+
+.inputArea {
+  position: fixed;
+  bottom: 0rpx;
+  min-height: 100rpx;
+  width: 100vw;
+  background-color: #44cccc;
+}
+.left {
+  width: 85%;
+}
+
+.left textarea{
+  min-height: 80rpx;
+  width: 90%;
+  margin: 20rpx auto;
+  border: beige 1rpx solid;
+  background-color: #fff;
+}
+
+.right {
+  width: 15%;
+  color: aliceblue;
+}

@@ -1,0 +1,43 @@
+<import src="../template/template.wxml"></import>
+
+<template is="comTitle" data="{{title: '管理学生信息'}}"></template>
+<template is="mask" data="{{ifMask: ifMask}}"></template>
+
+<view class="add" bindtap="add" >
+  <image src="../../images/add.png" mode="heightFix"></image>
+</view>
+<view class="center">
+  <l-collapse>
+    <l-collapse-item wx:for="{{stuList}}" title="{{item.class}} {{item.name}}">
+      学号：{{item.num}}
+    <view class="radio" style="margin-top: 20rpx">
+      <radio value="r2" bindchange="test" color="#44cccc" checked="{{item.checked}}"/>设定为评议人员
+    </view>
+    </l-collapse-item>
+  </l-collapse>
+</view>
+
+<!-- 遮罩添加 -->
+<view class="addStudent" wx:if="{{ifMask}}">
+  <view class="pickerInfo">
+    <view class="pickerInfo-left fl">
+      当前选择:
+    </view>
+    <view class="pickerInfo-right fr">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picker">
+        <view class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="input">
+    <input type="text" model:value="{{add.name}}" placeholder="姓名"/>
+    <input type="text" model:value="{{add.num}}" placeholder="学号"/>
+  </view>
+  <label class="radio" style="color:#000">
+    <radio value="r1" checked="{{false}}" color="#44cccc"/>设为评议人员
+  </label>
+  <view class="cancel" bindtap="cancel">取消</view>
+  <view class="addStu" bindtap="addStu">确定</view>
+</view>

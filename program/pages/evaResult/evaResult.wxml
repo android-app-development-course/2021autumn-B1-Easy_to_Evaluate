@@ -1,0 +1,15 @@
+<import src="../template/template.wxml"></import>
+
+<template is="title" data="{{title: '综测结果'}}"></template>
+
+<view class="center">
+  <l-collapse wx:for="{{list}}">
+    <l-collapse-item title="No.{{index + 1}} {{item.name}}">
+      <view wx:for="{{item.moduleList}}">
+        {{item.moduleName}}模块（{{item.num}}）： {{item.grade
+        }}分
+      </view>
+      <view>综合：{{item.total}}分</view>
+    </l-collapse-item>
+  </l-collapse>
+</view>

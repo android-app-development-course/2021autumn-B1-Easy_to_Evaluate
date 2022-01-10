@@ -1,0 +1,92 @@
+/* pages/stuList/stuList.wxss */
+.addStudent {
+  position: fixed;
+  z-index: 1000;
+  top: 15vh;
+  right: 10vw;
+  box-sizing: border-box;
+  padding: 30rpx;
+  height: 60vh;
+  width: 80vw;
+  color: rgb(255, 255, 255);
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.pickerInfo {
+  height: 100rpx;
+}
+.pickerInfo-left {
+  height: 100rpx;
+  width: 30%;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  background-color: #44cccc;
+}
+.pickerInfo-right {
+  height: 100rpx;
+  width: 65%;
+  border-radius: 40rpx;
+  background-color: #44cccc;
+}
+.picker {
+  padding-left: 20rpx;
+  line-height: 100rpx;
+}
+.input input {
+  margin: 30rpx 0;
+  height: 100rpx;
+  padding-left: 30rpx;
+  color: black;
+  border: 1rpx solid #44cccc;
+  border-radius: 20rpx;
+}
+.cancel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20rpx;
+  height:80rpx;
+  width: 40%;
+  text-align: center;
+  line-height:80rpx;
+  background-color: rgb(179, 171, 171);
+  border-radius: 20rpx;
+}
+.addStu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20rpx;
+  height:80rpx;
+  width: 40%;
+  text-align: center;
+  line-height:80rpx;
+  background-color: #44cccc;
+  border-radius: 20rpx;
+}
+.cancel1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 60rpx 50rpx;
+  height: 100rpx;
+  width: 250rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: rgba(167, 167, 167, 0.521);
+}
+.sure {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 50rpx 60rpx 0;
+  height: 100rpx;
+  width: 250rpx;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #44cccc;
+}

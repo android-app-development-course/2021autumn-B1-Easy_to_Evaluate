@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/wode/wode",
+    "pages/joinEva/joinEva",
+    "pages/comuniList/comuniList",
+    "pages/evaResult/evaResult",
+    "pages/manageModule/manageModule",
+    "pages/changeModule/changeModule",
+    "pages/evaDetail/evaDetail",
+    "pages/waitJudgeList/waitJudgeList",
+    "pages/jdugeList/jdugeList",
+    "pages/evaList/evaList",
+    "pages/stuList/stuList",
+    "pages/comDetail/comDetail",
+    "pages/template/template"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#5dd1d1",
+    "backgroundColor": "#eeeeee",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/_zongceliebiao.png",
+        "iconPath": "images/zongceliebiao.png",
+        "pagePath": "pages/evaList/evaList",
+        "text": "综测列表"
+      },
+      {
+        "selectedIconPath": "images/_liaotian.png",
+        "iconPath": "images/liaotian.png",
+        "pagePath": "pages/comuniList/comuniList",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "images/_wode.png",
+        "iconPath": "images/wode.png",
+        "pagePath": "pages/wode/wode",
+        "text": "我"
+      }
+    ]
+  },
+  "usingComponents": {
+    "l-button":"./miniprogram_npm/lin-ui/button/index",
+    "l-input":"./miniprogram_npm/lin-ui/input/index",
+    "l-toast":"./miniprogram_npm/lin-ui/toast/index",
+    "l-collapse":"./miniprogram_npm/lin-ui/collapse/index",
+    "l-collapse-item":"./miniprogram_npm/lin-ui/collapse-item/index",
+    "l-icon":"./miniprogram_npm/lin-ui/icon/index"
+  }
+}

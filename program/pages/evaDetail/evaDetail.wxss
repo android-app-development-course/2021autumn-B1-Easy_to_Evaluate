@@ -1,0 +1,38 @@
+/* pages/evaDetail/evaDetail.wxss */
+
+.setting-view {
+  margin: 50rpx 0;
+  overflow: hidden;
+}
+.setting-title {
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  /* font-weight: bold; */
+  line-height: 50rpx;
+  color: #44cccc;
+}
+.setting-more {
+  margin-right: 20rpx;
+  padding: 0 20rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 50rpx;
+  background-color: #44cccc;
+  border-radius: 10rpx;
+}
+.muduleItem {
+  margin: 30rpx 0;
+  overflow: hidden;
+}
+.moduleTitle {
+ font-size: 1em;
+}
+.moduleMore {
+  margin-right: 20rpx;
+  padding: 0 20rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 50rpx;
+  background-color: #44cccc;
+  border-radius: 10rpx;
+}

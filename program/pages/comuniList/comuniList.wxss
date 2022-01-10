@@ -1,0 +1,9 @@
+/* pages/evaList/evaList.wxss */
+
+.comItem {
+  line-height: 200%;
+  padding: 0 20rpx;
+  margin: 10rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+}

@@ -1,0 +1,50 @@
+<import src="../template/template.wxml"></import>
+
+<template is="title" data="{{title: taskName}}"></template>
+
+<view style="height: 30rpx"></view>
+<view class="center">
+  <view style="font-size: 35rpx;font-weight: bold;">任务基本信息</view>
+  <view class="setting-view">
+    <view class="setting-title fl">当前阶段：{{stage}}</view>
+    <view class="setting-more fr" bindtap="setStage">设置</view>
+  </view>
+  <view class="setting-view">
+    <view class="setting-title fl">当前参评学生：{{joinNum}}人</view>
+    <view class="setting-more fr" bindtap="nowJoinNum">设置</view>
+  </view>
+  <view class="setting-view">
+    <view class="setting-title fl">当前评议人员：{{judgeNum}}人</view>
+    <view class="setting-more fr" bindtap="nowJudgeNum">设置</view>
+  </view>
+  <view class="setting-view">
+    <view class="setting-title fl">剩余评议材料</view>
+    <view class="setting-more fr" bindtap="waitJudgeList">设置</view>
+  </view>
+  <view style="font-size: 35rpx;font-weight: bold;">综测模块</view>
+  <view class="muduleItem" wx:for="{{moduleList}}">
+    <view style="overflow: hidden;">
+      <view class="moduleTitle fl">模块{{index + 1}}：{{item.name}}</view>
+      <view class="moduleMore fr" bindtap="manageModule">管理综测模块</view>
+    </view>
+    <view>占比</view>
+    <view>
+      <slider bindchange="slider3change" show-value="{{true}}" value="{{moduleList[index].num}}" activeColor="#44eeee" block-color="#ff0000" disabled="{{false}}"/>
+    </view>
+  </view>
+  <view style="font-size: 35rpx;font-weight: bold;">更多功能</view>
+  <view class="border" style="border-radius: 20rpx;border-width: rpx;">
+    <view class="setting-view">
+      <view class="setting-title fl">已标记材料</view>
+      <view class="setting-more fr" bindtap="">查看 </view>
+    </view>
+    <view class="setting-view">
+      <view class="setting-title fl">综测结果</view>
+      <view class="setting-more fr" bindtap="toResult">查看 </view>
+    </view>
+    <view class="setting-view">
+      <view class="setting-title fl">综测规则变更日志</view>
+      <view class="setting-more fr" bindtap="">查看 </view>
+    </view>
+  </view>
+</view>

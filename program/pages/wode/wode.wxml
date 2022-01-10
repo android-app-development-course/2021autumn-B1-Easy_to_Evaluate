@@ -1,0 +1,30 @@
+<import src="../template/template.wxml"></import>
+
+<template is="title" data="{{title: '我的'}}"></template>
+
+<view class="center">
+  <view class="userInfo border" bindtap="test">
+    <image mode="heightFix" src="../../images/avatar.png" style="height:150rpx;margin-left: 10rpx;">
+    </image>
+    <view class="info" style="display: inline-block;">
+      <view class="name">姓名：{{userInfo.name}}</view>
+      <view class="num">{{userInfo.ifManager?"账号":"学号"}}:{{userInfo.num}}</view>
+    </view>
+  </view>
+  <view class="changePassword border" bindtap="">
+    <image mode="heightFix" src="../../images/password.png" style="height:50rpx;margin-left: 30rpx;">
+    </image>
+    <text class="content">修改密码</text>
+  </view>
+  <view class="myEva border" bindtap="myEva">
+    <image mode="heightFix" src="../../images/eva.png" style="height:50rpx;margin-left: 30rpx;">
+    </image>
+    <text class="content">我的综测</text>
+  </view>
+  <view class="myEvaResult border" bindtap="">
+    <image mode="heightFix" src="../../images/evaResult.png" style="height:50rpx;margin-left: 30rpx;">
+    </image>
+    <text class="content" style="display: inline-block;">我的综测结果</text>
+  </view>
+</view>
+  <view style="position:fixed;bottom:0;width:100vw;text-align: center; font-size: 0.8em;color:aquamarine"bindtap="unlogin">退出登录</view>

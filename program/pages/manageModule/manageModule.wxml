@@ -1,0 +1,14 @@
+<import src="../template/template.wxml"></import>
+
+<template is="comTitle" data="{{title: '管理模块'}}"></template>
+<view class="center">
+  <view class="muduleItem border" wx:for="{{moduleList}}">
+    <view class="moduleItemTitle">
+      规则{{index + 1}} {{item.name}}
+      <view class="changeButton fr" bindtap="changeModule">修改/删除规则</view>    
+    </view>
+    <view style="font-size: 0.9em;" wx:for="{{item.prizeList}}">
+      {{item.prizeNum}}分 {{index + 1}}级奖项 {{item.prizeName}}
+    </view>
+  </view>
+</view>

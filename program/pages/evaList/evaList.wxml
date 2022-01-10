@@ -1,0 +1,26 @@
+<import src="../template/template.wxml"/>
+<!-- 添加按钮 -->
+<view class="add" bindtap="add" wx:if="{{isManager}}">
+  <image src="../../images/add.png" mode="heightFix"></image>
+</view>
+<template is="title" data="{{title: '综测任务'}}"></template>
+<template is="mask" data="{{ifMask: ifMask}}"></template>
+
+<view class="center">
+  <view wx:for="{{taskList}}" id="{{index}}" bindtap="toTaskDetail" class="taskContainer">
+    {{item.name}}任务进行中
+    <view class="dateContainer">
+      <text>剩余时间\n待完成功能</text>
+    </view>
+  </view>
+</view>
+<!-- 遮罩添加 -->
+<view class="addTask" wx:if="{{ifMask}}">
+  <text class="addTitle">综测任务名</text>
+  <input class="borderInput" type="text" placeholder="请输入综测任务名(确定后不可修改)"/>
+  <text class="addTitle">模块名</text>
+  <text bindtap="addModule" style="color: #000; margin-left: 30rpx;">添加</text>
+  <input wx:for="{{moduleList}}" class="borderInput" type="text" placeholder="请输入模块{{index + 1}}名称"/>
+  <view class="cancel" bindtap="cancel">取消</view>
+  <view class="addStu" bindtap="addTask">确定</view>
+</view>

@@ -1,0 +1,63 @@
+/* pages/comuniList/comuniList.wxss */
+.taskContainer {
+  position: relative;
+  margin-bottom: 30rpx;
+  padding: 20rpx;
+  font-size: 30rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  background-color: #44cccc;
+}
+.dateContainer {
+  position: relative;
+  bottom: 0;
+  margin: 50rpx auto 0;
+  height: 100rpx;
+  text-align: center;
+  color: #000;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+/* 遮罩 */
+.addTask {
+  position: fixed;
+  z-index: 1000;
+  top: 15vh;
+  right: 10vw;
+  box-sizing: border-box;
+  padding: 30rpx;
+  min-height: 80vh;
+  width: 80vw;
+  overflow: scroll;
+  color: rgb(255, 255, 255);
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.cancel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20rpx;
+  height: 80rpx;
+  width: 40%;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: rgb(179, 171, 171);
+  border-radius: 20rpx;
+}
+.addStu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20rpx;
+  height: 80rpx;
+  width: 40%;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #44cccc;
+  border-radius: 20rpx;
+}
+.addTitle {
+  font-size: 35rpx;
+  color: #44cccc;
+}

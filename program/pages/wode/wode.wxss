@@ -1,0 +1,31 @@
+/* pages/wode/wode.wxss */
+.userInfo {
+  margin-top: 30rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.changePassword {
+  margin-top: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.myEva {
+  margin-top: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.myEvaResult {
+  margin-top: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.content {
+  line-height: 100rpx;
+}

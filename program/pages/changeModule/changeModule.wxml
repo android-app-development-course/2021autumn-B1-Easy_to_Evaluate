@@ -1,0 +1,14 @@
+<import src="../template/template.wxml"></import>
+
+<template is="comTitle" data="{{title: '美赛建模'}}"></template>
+
+<view class="center"style="margin-top: 40rpx">
+  <l-collapse>
+    <l-collapse-item wx:for="{{prizeList}}" title="{{index + 1}}级奖项">
+      <input class="borderInput" placeholder="请输入奖项名" value="{{item.name}}"></input>   
+      <input class="borderInput" placeholder="请输入分值" value="{{item.num}}"></input>   
+    </l-collapse-item>
+  </l-collapse>
+  <view class="cancel" bindtap="cancel">返回</view>
+  <view class="sure" bindtap="sure">确定</view>
+</view>

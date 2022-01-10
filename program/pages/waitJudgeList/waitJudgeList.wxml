@@ -1,0 +1,15 @@
+<import src="../template/template.wxml"></import>
+
+<template is="comTitle" data="{{title: '待测列表'}}"></template>
+
+
+<view class="center">
+  <view class="" wx:for="{{stuList}}" style="height: 80rpx;padding: 10rpx 0;border-bottom: 1rpx solid #44eeee4b;">
+    <view class="fl">
+      {{item.class}} {{item.name}}
+    </view>
+    <view class="fr">
+      <view class="button" bindtap="gotoD">核对</view>
+    </view>
+  </view>
+</view>

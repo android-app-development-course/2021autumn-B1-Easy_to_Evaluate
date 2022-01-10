@@ -1,0 +1,24 @@
+<!--pages/template/template.wxml-->
+<template name="title" >
+  <!-- <view style="background-color: #44cccc;position: relative;"> -->
+  <view style="background-color: #fff;position: relative;">
+    <text style="padding-left: 40rpx;font-size: 40rpx; color: #000; line-height: 100rpx;">{{ title }}</text>
+  <image src="../../images/message.png" mode="heightFix" style="position: absolute;right: 3%;top: 10%;height: 80rpx;"></image>
+  </view>
+</template>
+
+<template name="loginTitle" >
+  <view style="background-color: #44cccc;position: relative;">
+    <text style="padding-left: 20rpx;font-size: 50rpx; color: #fff; line-height: 200%;">{{ title }}</text>
+  </view>
+</template>
+
+<template name="comTitle" >
+  <view style="background-color: #44cccc;position: relative;text-align: center;">
+    <text style="padding-left: 20rpx;font-size: 50rpx; color: #fff; line-height: 200%;">{{title}}</text>
+  </view>
+</template>
+
+<template name="mask">
+  <view wx:if="{{ifMask}}" style="position: fixed; top: 0;z-index: 999;height: 100vh;width: 100vw; background-color: rgba(0, 0, 0, 0.336);"></view>
+</template>

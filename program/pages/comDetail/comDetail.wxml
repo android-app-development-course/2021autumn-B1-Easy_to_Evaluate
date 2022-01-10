@@ -1,0 +1,15 @@
+<import src="../template/template.wxml"></import>
+
+<template is="comTitle" data="{{title: name}}"></template>
+
+<view class="Container center">
+  <view wx:for="{{messageList}}" class="messageContainer">
+    <view class="{{item.me? 'my' : 'opposite' }}Message border">{{item.content}}</view>  
+  </view>
+</view>
+<view class="inputArea">
+  <view class="left fl">
+    <textarea type="text" value="{{value}}" bindinput="input" auto-height="{{true}}"></textarea>
+  </view>
+  <view class="right fr" bindtap="send">发送</view>
+</view>
